@@ -43,7 +43,6 @@ _status_format_2 () {
 
 
 _set_statuses() {
-  echo "hi"
   tmux set -g status-format[1] "$(_decode_unicode_escapes "$(_status_format_1)")"
 }
 
