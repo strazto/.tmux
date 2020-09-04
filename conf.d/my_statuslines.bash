@@ -37,10 +37,18 @@ _status_format_1 () {
   echo "$out"
 }
 
+_status_format_2 () {
+  :; 
+}
 
-tmux set -g status-format[1] "$(_decode_unicode_escapes "$(_status_format_1)")"
 
+_set_statuses() {
+  echo "hi"
+  tmux set -g status-format[1] "$(_decode_unicode_escapes "$(_status_format_1)")"
+}
 
-# status_left=$(echo "$status_left" | sed 's%#{circled_session_name}%#(cut -c3- ~/.tmux/apply.conf | sh -s _circled #S)%g')
+_get_path() {
+  :;
+}
 
-#"$@"
+"$@"
