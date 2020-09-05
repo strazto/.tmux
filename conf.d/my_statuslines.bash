@@ -32,7 +32,7 @@ _status_format_1 () {
 
   head_sep="#{?pane_active,${active_main},${off_main}}${_ms} "
   tail_sep="#{?pane_active,${active_flip},${off_flip}}${_ms} "
-  out="#[align=centre]#{P:#[default]${head_sep}#{pane_index}${_ss} #{pane_width}x#{pane_height}${tail_sep}#[default]}"
+  out="#[align=centre]#{P:#[default]${head_sep}#{pane_index}${_ss} #{pane_current_command}${_ss}#{pane_width}x#{pane_height}${tail_sep}#[default]}"
   
   echo "$out"
 }
