@@ -1,0 +1,3 @@
+[submodule "conf.d/nested"]
+	path = conf.d/nested
+	url = https://github.com/matthewstrasiotto/nested-tmux.git
